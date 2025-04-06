@@ -618,6 +618,7 @@ button:focus,
   .currency-conversion {
     margin-top: 40px;
     text-align: center;
+    margin: auto;
   }
   
   .currency-conversion h4 {
@@ -653,7 +654,7 @@ button:focus,
   
   .conversion-table th,
   .conversion-table td {
-    padding: 15px;
+    /* padding: 15px; */
     text-align: center;
     border-bottom: 1px solid var(--gray);
   }
