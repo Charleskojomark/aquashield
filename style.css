@@ -123,7 +123,7 @@ button:focus,
   /* Hero Section */
   .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-      url("/images/proofwat.jpg") center/cover;
+      url("images/proofwat.jpg") center/cover;
     height: 500px;
     display: flex;
     align-items: center;
