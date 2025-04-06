@@ -21,20 +21,44 @@ function filterProducts(category) {
     const closeBtn = document.querySelector(".close-menu");
     const mobileMenu = document.querySelector(".mobile-menu");
     const overlay = document.querySelector(".overlay");
+    const navLinks = document.querySelectorAll(".mobile-nav a"); // Select all mobile nav links
   
+    // Open menu
     menuBtn.addEventListener("click", () => {
       mobileMenu.classList.add("active");
       overlay.classList.add("active");
     });
   
+    // Close menu via close button
     closeBtn.addEventListener("click", () => {
       mobileMenu.classList.remove("active");
       overlay.classList.remove("active");
     });
   
+    // Close menu via overlay click
     overlay.addEventListener("click", () => {
       mobileMenu.classList.remove("active");
       overlay.classList.remove("active");
+    });
+  
+    // Close menu and scroll when clicking a nav link
+    navLinks.forEach(link => {
+      link.addEventListener("click", (e) => {
+        // Prevent default briefly to ensure menu closes first (optional)
+        // e.preventDefault(); // Uncomment if scrolling breaks
+  
+        // Close the menu
+        mobileMenu.classList.remove("active");
+        overlay.classList.remove("active");
+  
+        // Scroll to section (handled by browser due to scroll-behavior: smooth)
+        // If needed, manually scroll:
+        /* const targetId = link.getAttribute("href").substring(1); // Remove #
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: "smooth" });
+        } */
+      });
     });
   }
   
