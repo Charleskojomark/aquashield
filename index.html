@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AquaShield Africa - Waterproof Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        Aqua<span>Shield</span> Africa
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#distribution">Distribution</a></li>
+        <li><a href="#app">Mobile App</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="language-selector">
+        <select class="lang-select">
+          <option value="en" selected>English (EN)</option>
+          <option value="fr">French (FR)</option>
+          <option value="sw">Swahili (SW)</option>
+        </select>
+      </div>
+      <button class="mobile-menu-btn">☰</button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="close-menu">✕</button>
+    <ul class="mobile-nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#distribution">Distribution</a></li>
+      <li><a href="#app">Mobile App</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="language-selector">
+      <select class="lang-select">
+        <option value="en" selected>English (EN)</option>
+        <option value="fr">French (FR)</option>
+        <option value="sw">Swahili (SW)</option>
+      </select>
+    </div>
+  </div>
+  <div class="overlay"></div>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Africa's Leading Waterproof Solutions Provider</h1>
+      <p>Protecting homes and businesses across the continent with innovative waterproofing products and solutions</p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn">Explore Products</a>
+        <a href="#distribution" class="btn btn-secondary">Find Distributors</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose AquaShield Africa</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3>Pan-African Distribution</h3>
+          <p>Extensive network across 25+ African countries for reliable access.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Mobile-First Approach</h3>
+          <p>Offline-capable app for contractors and distributors.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔄</div>
+          <h3>Localized Solutions</h3>
+          <p>Products tailored to Africa's diverse climates.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💳</div>
+          <h3>Flexible Payments</h3>
+          <p>Mobile money, cash, and credit options.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h3>Training & Support</h3>
+          <p>Multi-language training for all partners.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <h3>Built for Africa</h3>
+          <p>Designed for unreliable internet and power.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offline Mode Section -->
+  <section class="offline-mode">
+    <div class="container">
+      <div class="offline-container">
+        <div class="offline-info">
+          <h2>Built for African Realities</h2>
+          <p>Our platform works seamlessly in areas with limited connectivity.</p>
+          <ul class="app-features">
+            <li>Complete product catalog offline</li>
+            <li>Process orders without internet</li>
+            <li>Offline training videos</li>
+            <li>Background syncing</li>
+          </ul>
+        </div>
+        <div class="offline-image">
+          <div class="offline-device">
+            <img src="/images/water.jpg" alt="Offline Mode Demonstration" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="product-heading">All Products</h2>
+      </div>
+      <div class="product-filter">
+        <select class="filter-select" onchange="filterProducts(this.value)">
+          <option value="all">All Products</option>
+          <option value="roof">Roof Coatings</option>
+          <option value="wall">Wall Protection</option>
+          <option value="foundation">Foundation</option>
+        </select>
+      </div>
+      <div class="product-grid">
+        <div class="product-card" data-category="roof">
+          <div class="product-image"><img src="images/proofwater.jpg" alt=""></div>
+          <div class="product-info">
+            <h3>Roof Coating A</h3>
+            <p>High-quality roof protection.</p>
+            <span class="product-price">$50</span>
+          </div>
+        </div>
+        <div class="product-card" data-category="wall">
+          <div class="product-image"><img src="images/waterp.jpg" alt=""></div>
+          <div class="product-info">
+            <h3>Wall Guard B</h3>
+            <p>Durable wall sealant.</p>
+            <span class="product-price">$40</span>
+          </div>
+        </div>
+        <div class="product-card" data-category="foundation">
+          <div class="product-image"><img src="images/water.jpg" alt=""></div>
+          <div class="product-info">
+            <h3>Foundation Seal C</h3>
+            <p>Strong base protection.</p>
+            <span class="product-price">$60</span>
+          </div>
+        </div>
+        <!-- Add more products as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Distribution Map Section -->
+  <section class="distribution-map" id="distribution">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Distribution Network</h2>
+      </div>
+      <div class="map-container">
+        <img src="/images/africa.jpg" alt="AquaShield Africa Distribution Map" class="map-image">
+        <div class="map-overlay">
+          <select class="country-selector">
+            <option value="NG">Nigeria</option>
+            <option value="KE">Kenya</option>
+            <option value="ZA">South Africa</option>
+            <option value="GH">Ghana</option>
+            <option value="ET">Ethiopia</option>
+          </select>
+          <div class="distrib-stats">
+            <div class="stat-item">
+              <span class="stat-value">25+</span>
+              <span class="stat-label">Countries</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">150+</span>
+              <span class="stat-label">Distributors</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">500+</span>
+              <span class="stat-label">Cities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile App Section -->
+  <section class="mobile-app" id="app">
+    <div class="container">
+      <div class="app-content">
+        <div class="app-info">
+          <h2>Download Our Mobile App</h2>
+          <p>Access products, training, and orders anytime, anywhere—even offline.</p>
+          <ul class="app-features">
+            <li>Offline product browsing</li>
+            <li>Order tracking</li>
+            <li>Training resources</li>
+            <li>Multi-language support</li>
+          </ul>
+          <div class="app-buttons">
+            <a href="#" class="app-btn"><span>Get on Google Play</span></a>
+            <a href="#" class="app-btn"><span>Get on App Store</span></a>
+          </div>
+        </div>
+        <div class="app-screenshots">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <img src="/api/placeholder/230/480" alt="App Screenshot" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-title">
+        <h2>What Our Partners Say</h2>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-card">
+          <div class="testimonial-content">
+            <p>"AquaShield’s offline app has transformed how we manage orders in rural areas."</p>
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar"></div>
+            <div class="author-info">
+              <h4>John Adebayo</h4>
+              <p>Distributor, Nigeria</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2>Get in Touch</h2>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="contact-icon">✉️</span>
+            <p>info@aquashieldafrica.com</p>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <p>+234 123 456 7890</p>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <p>123 Waterway Lane, Lagos, Nigeria</p>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" placeholder="Your Message"></textarea>
+          </div>
+          <button class="btn">Send Message</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Localized Pricing Section -->
+  <section class="localized-pricing">
+    <div class="container">
+      <div class="section-title">
+        <h2>Localized Pricing</h2>
+      </div>
+      <div class="price-controls">
+        <select class="region-selector">
+          <option value="NG">Nigeria (NGN)</option>
+          <option value="KE">Kenya (KES)</option>
+          <option value="ZA">South Africa (ZAR)</option>
+          <option value="GH">Ghana (GHS)</option>
+          <option value="ET">Ethiopia (ETB)</option>
+        </select>
+        <div class="currency-display">Showing prices in Nigerian Naira (₦)</div>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Distributor Basic</h3>
+            <div class="price">₦250,000</div>
+            <p>monthly minimum order</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Core product catalog</li>
+            <li>Standard delivery</li>
+            <li>Online ordering</li>
+            <li>Basic training</li>
+            <li>30-day payment terms</li>
+          </ul>
+          <div class="pricing-footer">
+            <button class="pricing-btn">Become a Distributor</button>
+          </div>
+        </div>
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3>Distributor Plus</h3>
+            <div class="price">₦500,000</div>
+            <p>monthly minimum order</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Full catalog access</li>
+            <li>Priority delivery</li>
+            <li>Inventory management</li>
+            <li>Dedicated manager</li>
+            <li>45-day payment terms</li>
+          </ul>
+          <div class="pricing-footer">
+            <button class="pricing-btn">Upgrade Today</button>
+          </div>
+        </div>
+        <div class="pricing-card featured">
+          <div class="ribbon">Popular</div>
+          <div class="pricing-header">
+            <h3>Distributor Premium</h3>
+            <div class="price">₦1,000,000</div>
+            <p>monthly minimum order</p>
+          </div>
+          <ul class="pricing-features">
+            <li>Early access catalog</li>
+            <li>Express delivery</li>
+            <li>Supply chain integration</li>
+            <li>Business support</li>
+            <li>60-day payment terms</li>
+            <li>Exclusive territory</li>
+          </ul>
+          <div class="pricing-footer">
+            <button class="pricing-btn primary">Contact Sales</button>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-footnote">
+        <p>All prices exclude taxes and duties. Subject to change.</p>
+      </div>
+      <div class="currency-conversion">
+        <h4>Currency Conversion Rates</h4>
+        <table class="conversion-table">
+          <thead>
+            <tr>
+              <th>Currency</th>
+              <th>Basic</th>
+              <th>Plus</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kenya (KES)</td>
+              <td>KES 750,000</td>
+              <td>KES 1,500,000</td>
+              <td>KES 3,000,000</td>
+            </tr>
+            <tr>
+              <td>South Africa (ZAR)</td>
+              <td>R 100,000</td>
+              <td>R 200,000</td>
+              <td>R 400,000</td>
+            </tr>
+            <tr>
+              <td>Ghana (GHS)</td>
+              <td>GHS 175,000</td>
+              <td>GHS 350,000</td>
+              <td>GHS 700,000</td>
+            </tr>
+            <tr>
+              <td>Ethiopia (ETB)</td>
+              <td>ETB 900,000</td>
+              <td>ETB 1,800,000</td>
+              <td>ETB 3,600,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <p>Leading waterproofing solutions provider across Africa.</p>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#products">Products</a></li>
+            <li><a href="#distribution">Distribution</a></li>
+            <li><a href="#app">Mobile App</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Contact Info</h3>
+          <p>Email: info@aquashieldafrica.com</p>
+          <p>Phone: +234 123 456 7890</p>
+        </div>
+        <div class="footer-column">
+          <h3>Follow Us</h3>
+          <div class="social-links">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 AquaShield Africa. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
